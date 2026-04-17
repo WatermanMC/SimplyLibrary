@@ -21,39 +21,65 @@
 
 ## For Developers
 ### Dependency:
+[![](https://jitpack.io/v/WatermanMC/SimplyLibrary.svg)](https://jitpack.io/#WatermanMC/SimplyLibrary)
 
 **Maven (pom.xml):**<br>
 Repository:
 ```xml
-
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 ```
 Dependency:
 ```xml
-
+	<dependency>
+	    <groupId>com.github.WatermanMC</groupId>
+	    <artifactId>SimplyLibrary</artifactId>
+	    <version>1.0-BETA</version>
+	</dependency>
 ```
 
 **Gradle (build.gradle.kts):**<br>
 Add it in your `settings.gradle.kts` at the end of repositories:
 ```kotlin
-
+	dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url = uri("https://jitpack.io") }
+		}
+	}
 ```
 Add the dependency:
 ```kotlin
-
+	dependencies {
+	        implementation("com.github.WatermanMC:SimplyLibrary:1.0-BETA")
+	}
 ```
 
 **Gradle (build.gradle):**<br>
 Add it in your root settings.gradle at the end of repositories:
 ```groovy
-
+	dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
 ```
 Add the dependency:
 ```groovy
-
+	dependencies {
+	        implementation 'com.github.WatermanMC:SimplyLibrary:1.0-BETA'
+	}
 ```
 
-**[Javadocs]()**<br>
-**[Example code using SimplyLibrary]()**
+**[Javadocs](https://jitpack.io/com/github/WatermanMC/SimplyLibrary/1.0-BETA/javadoc/)**<br>
+**[Example codes using SimplyLibrary](https://github.com/WatermanMC/SimplyLibrary/wiki)**
 
 ---
 
@@ -63,5 +89,5 @@ Add the dependency:
 **License:** GNU General Public License v3
 
 * **GitHub Repository** (Source Code): [https://github.com/WatermanMC/SimplyLibrary](https://github.com/WatermanMC/SimplyLibrary)
-* **Wiki**: [https://github.com/WatermanMC/SimplyLibrary/wiki](https://github.com/WatermanMC/SimplyLibrary/wiki)
+* **Example Codes**: [https://github.com/WatermanMC/SimplyLibrary/wiki](https://github.com/WatermanMC/SimplyLibrary/wiki)
 * **Discord Support:** [https://discord.gg/Scgqfm5EU4](https://discord.gg/Scgqfm5EU4)
