@@ -61,7 +61,7 @@ Add the dependency:
 ```
 
 **Gradle (build.gradle):**<br>
-Add it in your root settings.gradle at the end of repositories:
+Add it in your root `settings.gradle` at the end of repositories:
 ```groovy
 	dependencyResolutionManagement {
 		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
