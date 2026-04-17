@@ -1,0 +1,7 @@
+name: SimplyLibrary
+description: Powerful library aims to simplify Paper API to make coding plugins more easier and quicker
+version: '1.0-BETA'
+authors: [ WatermanMC ]
+softdepend: [ Vault ]
+main: com.github.WatermanMC.SimplyLibrary.Main
+api-version: '1.21'
