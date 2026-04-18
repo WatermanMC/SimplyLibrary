@@ -2,6 +2,7 @@ package com.github.WatermanMC.SimplyLibrary.api;
 
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -52,7 +53,7 @@ public interface SimplyTextUtils {
      * @param message Message of action bar, supports {@link net.kyori.adventure.text.minimessage.MiniMessage} only
      */
     void sendActionBar(@NotNull Plugin plugin,
-                       @NotNull Audience target,
+                       @NotNull Player target,
                        long durationTicks,
                        @NotNull String message);
 
@@ -66,7 +67,7 @@ public interface SimplyTextUtils {
      * @param subtitle Subtitle (optional), supports {@link net.kyori.adventure.text.minimessage.MiniMessage} only
      */
     void sendTitles(@NotNull Plugin plugin,
-                    @NotNull Audience target,
+                    @NotNull Player target,
                     long durationTicks,
                     @NotNull String title,
                     @Nullable String subtitle);

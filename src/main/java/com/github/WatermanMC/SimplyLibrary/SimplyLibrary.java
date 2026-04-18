@@ -1,6 +1,7 @@
 package com.github.WatermanMC.SimplyLibrary;
 
 import com.github.WatermanMC.SimplyLibrary.api.*;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * SimplyLibrary API
@@ -82,7 +83,7 @@ public class SimplyLibrary {
      * @param commandExecutor Sets the primary label (name) of the command
      * @return Access to Command builder
      */
-    public SimplyCommandBuilder getCommandBuilder(String commandExecutor) {
+    public SimplyCommandBuilder getCommandBuilder(@NotNull String commandExecutor) {
         return new SimplyCommandBuilderImpl(commandExecutor);
     }
 
@@ -92,7 +93,7 @@ public class SimplyLibrary {
      * @param commandExecutor Access the command name (label)
      * @return Access to Command tab completer builder
      */
-    public SimplyCommandCompleterBuilder getCommandCompleterBuilder(String commandExecutor) {
+    public SimplyCommandCompleterBuilder getCommandCompleterBuilder(@NotNull String commandExecutor) {
         return new SimplyCommandCompleterBuilderImpl(commandExecutor);
     }
 }

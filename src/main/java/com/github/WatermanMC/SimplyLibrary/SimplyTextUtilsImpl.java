@@ -7,6 +7,7 @@ import net.kyori.adventure.text.JoinConfiguration;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.kyori.adventure.title.Title;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.jetbrains.annotations.NotNull;
@@ -64,7 +65,7 @@ class SimplyTextUtilsImpl implements SimplyTextUtils {
 
     @Override
     public void sendActionBar(@NotNull Plugin plugin,
-                              @NotNull Audience target,
+                              @NotNull Player target,
                               long durationTicks,
                               @NotNull String message) {
         if (durationTicks == 0) return;
@@ -89,7 +90,7 @@ class SimplyTextUtilsImpl implements SimplyTextUtils {
 
     @Override
     public void sendTitles(@NotNull Plugin plugin,
-                          @NotNull Audience target,
+                          @NotNull Player target,
                           long durationTicks,
                           @NotNull String title,
                           @Nullable String subtitle) {
