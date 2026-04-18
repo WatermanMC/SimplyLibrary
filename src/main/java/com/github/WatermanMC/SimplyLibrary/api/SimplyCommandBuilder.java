@@ -2,6 +2,7 @@ package com.github.WatermanMC.SimplyLibrary.api;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.util.ConcurrentModificationException;
 import java.util.List;
 
 /**
@@ -109,7 +110,7 @@ public interface SimplyCommandBuilder {
      * Registers the command directly into the server's CommandMap
      * <p>
      * This method <b>must</b> be called on the main server thread
-     * @throws java.util.ConcurrentModificationException When called asynchronously
+     * @throws ConcurrentModificationException When called asynchronously
      */
     void build();
 }

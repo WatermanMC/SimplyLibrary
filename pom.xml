@@ -46,7 +46,7 @@
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.6.3</version>
         <configuration>
-          <excludePackageNames>com.github.WatermanMC.SimplyLibrary</excludePackageNames>
+          <excludes>com.github.WatermanMC.SimplyLibrary.Main</excludes>
         </configuration>
         <executions>
           <execution>

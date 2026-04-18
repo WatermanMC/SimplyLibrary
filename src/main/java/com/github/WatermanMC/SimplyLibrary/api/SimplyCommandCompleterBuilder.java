@@ -1,5 +1,7 @@
 package com.github.WatermanMC.SimplyLibrary.api;
 
+import java.util.ConcurrentModificationException;
+
 /**
  * A command builder interface for easier creating PaperMC command completer
  * <p>
@@ -22,7 +24,7 @@ public interface SimplyCommandCompleterBuilder {
     /**
      * Registers the command directly into the server's CommandMap
      *
-     * @throws java.util.ConcurrentModificationException When called asynchronously
+     * @throws ConcurrentModificationException When called asynchronously
      */
     void build();
 }
