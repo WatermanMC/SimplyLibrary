@@ -25,6 +25,8 @@ public interface SimplyTextUtils {
     void sendMessage(@NotNull Audience target, @NotNull Object @NotNull ... messages);
 
     /**
+     * @deprecated
+     *
      * Sends a message to anyone via {@link Audience}<br>
      * Only supports legacy color codes using the ampersand symbol<br>
      * It is much more recommended to use {@link #sendMessage(Audience, Object...)} for modern alternative
