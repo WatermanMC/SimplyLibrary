@@ -83,7 +83,7 @@ public interface SimplyCommandBuilder {
 
 
     /**
-     * Sets whether arguments are strictly required for the command to execute, {@link MiniMessage} only
+     * Sets whether arguments are strictly required for the command to execute, {@link MiniMessage} supported only
      *
      * @param require True if the command should send {@link #usageMessage(String)} if without arguments
      * @return This builder instance for chaining
@@ -91,7 +91,7 @@ public interface SimplyCommandBuilder {
     SimplyCommandBuilder requireArgs(boolean require);
 
     /**
-     * Sets the usage message shown when the command is used incorrectly
+     * Sets the usage message shown when the command is used incorrectly, {@link MiniMessage} supported only
      *
      * @param message The usage message string
      * @return This builder instance for chaining
