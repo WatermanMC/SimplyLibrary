@@ -1,5 +1,6 @@
 package com.github.WatermanMC.SimplyLibrary.api;
 
+import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ConcurrentModificationException;
@@ -75,14 +76,14 @@ public interface SimplyCommandBuilder {
     /**
      * Sets the message sent when a user lacks the required permission on {@link #permission(String)}
      *
-     * @param message The No Permission message
+     * @param message The No Permission message, {@link MiniMessage} only
      * @return This builder instance for chaining
      */
     SimplyCommandBuilder permissionMessage(@NotNull String message);
 
 
     /**
-     * Sets whether arguments are strictly required for the command to execute
+     * Sets whether arguments are strictly required for the command to execute, {@link MiniMessage} only
      *
      * @param require True if the command should send {@link #usageMessage(String)} if without arguments
      * @return This builder instance for chaining
