@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Consumer;
 
-public class SimplyTimersImpl implements SimplyTimers {
+class SimplyTimersImpl implements SimplyTimers {
     private final Main plugin;
     private final Map<String, BukkitTask> activeTimers = new HashMap<>();
     private final Map<String, TimerResult> canceledStates = new HashMap<>();
