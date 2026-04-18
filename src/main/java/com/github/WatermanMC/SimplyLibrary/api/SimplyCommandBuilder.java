@@ -74,7 +74,7 @@ public interface SimplyCommandBuilder {
     SimplyCommandBuilder onlyPlayersMessage(@NotNull String message);
 
     /**
-     * Sets the message sent when a user lacks the required permission on {@link #permission(String)}
+     * Sets the message sent when a user lacks the required permission on {@link #permission(String)}, {@link MiniMessage} supported only
      *
      * @param message The No Permission message, {@link MiniMessage} only
      * @return This builder instance for chaining
@@ -83,7 +83,7 @@ public interface SimplyCommandBuilder {
 
 
     /**
-     * Sets whether arguments are strictly required for the command to execute, {@link MiniMessage} supported only
+     * Sets whether arguments are strictly required for the command to execute
      *
      * @param require True if the command should send {@link #usageMessage(String)} if without arguments
      * @return This builder instance for chaining
