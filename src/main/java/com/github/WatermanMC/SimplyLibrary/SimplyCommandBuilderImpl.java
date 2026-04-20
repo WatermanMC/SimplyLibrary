@@ -122,13 +122,13 @@ class SimplyCommandBuilderImpl extends Command implements SimplyCommandBuilder {
             if (requireArgs) {
                 lib.getTextUtils().sendMessage(sender, usageMessage);
             } else if (commandExecutor != null) {
-                commandExecutor.execute(sender, args);
+                commandExecutor.execute(sender, (Player) sender, args);
             }
             return true;
         }
 
         if (commandExecutor != null) {
-            commandExecutor.execute(sender, args);
+            commandExecutor.execute(sender, (Player) sender, args);
             return true;
         }
 
